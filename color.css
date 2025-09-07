@@ -1,0 +1,67 @@
+/* =============================== Professional Color Themes ================================ */
+
+/* Professional Blue - Primary */
+.color-1 {
+    --skin-color: #2563eb;
+    --accent-color: #1d4ed8;
+    --light-accent: #3b82f6;
+}
+
+/* Professional Navy */
+.color-2 {
+    --skin-color: #1e40af;
+    --accent-color: #1e3a8a;
+    --light-accent: #3b82f6;
+}
+
+/* Professional Teal */
+.color-3 {
+    --skin-color: #0f766e;
+    --accent-color: #0d9488;
+    --light-accent: #14b8a6;
+}
+
+/* Professional Indigo */
+.color-4 {
+    --skin-color: #4f46e5;
+    --accent-color: #4338ca;
+    --light-accent: #6366f1;
+}
+
+/* Professional Slate */
+.color-5 {
+    --skin-color: #475569;
+    --accent-color: #334155;
+    --light-accent: #64748b;
+}
+
+/* Apply active color theme to root */
+body.color-1 {
+    --skin-color: #2563eb;
+    --accent-color: #1d4ed8;
+    --light-accent: #3b82f6;
+}
+
+body.color-2 {
+    --skin-color: #1e40af;
+    --accent-color: #1e3a8a;
+    --light-accent: #3b82f6;
+}
+
+body.color-3 {
+    --skin-color: #0f766e;
+    --accent-color: #0d9488;
+    --light-accent: #14b8a6;
+}
+
+body.color-4 {
+    --skin-color: #4f46e5;
+    --accent-color: #4338ca;
+    --light-accent: #6366f1;
+}
+
+body.color-5 {
+    --skin-color: #475569;
+    --accent-color: #334155;
+    --light-accent: #64748b;
+}
