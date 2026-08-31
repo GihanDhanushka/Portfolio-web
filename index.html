@@ -4,42 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gihan Dhanushka - Modern Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="color.css">
 </head>
 <body>
-    <!-- Modern Navigation Header -->
-    <header class="navbar">
+    <!-- Modern Floating Glassmorphism Navbar -->
+    <header class="navbar" id="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Gihan <span class="accent">Dhanushka</span></span>
-            </div>
-            <nav class="nav-menu">
-                <a href="#hero" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <!-- Brand Logo -->
+            <a href="#hero" class="nav-brand" aria-label="Gihan Dhanushka Home">
+                <div class="brand-badge">GD</div>
+                <div class="brand-info">
+                    <span class="brand-text">Gihan<span class="brand-accent">.dev</span></span>
+                </div>
+                <span class="status-indicator" title="Open to opportunities">
+                    <span class="status-pulse"></span>
+                    <span class="status-text">Available</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Menu -->
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#services" class="nav-link">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#portfolio" class="nav-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Contact</span>
+                </a>
             </nav>
-            <div class="nav-controls">
-                <button class="theme-toggle" id="theme-toggle">
+
+            <!-- Actions & Controls -->
+            <div class="nav-actions">
+                <!-- Theme Toggle Button -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle Theme">
                     <i class="fas fa-moon"></i>
                 </button>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+
+                <!-- CTA Button -->
+                <a href="#contact" class="nav-cta-btn">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-nav-drawer" id="mobile-drawer">
+            <div class="mobile-drawer-header">
+
+            </div>
+            <div class="mobile-nav-links">
+                <a href="#hero" class="mobile-nav-link active">
+                    <div class="mobile-icon-box"><i class="fas fa-home"></i></div>
+                    <div class="mobile-link-text">
+                        <span class="title">Home</span>
+                        <span class="sub">Welcome & Overview</span>
+                    </div>
+                </a>
+                <a href="#about" class="mobile-nav-link">
+                    <div class="mobile-icon-box"><i class="fas fa-user"></i></div>
+                    <div class="mobile-link-text">
+                        <span class="title">About Me</span>
+                        <span class="sub">Background & Skills</span>
+                    </div>
+                </a>
+                <a href="#services" class="mobile-nav-link">
+                    <div class="mobile-icon-box"><i class="fas fa-laptop-code"></i></div>
+                    <div class="mobile-link-text">
+                        <span class="title">Services</span>
+                        <span class="sub">What I can build for you</span>
+                    </div>
+                </a>
+                <a href="#portfolio" class="mobile-nav-link">
+                    <div class="mobile-icon-box"><i class="fas fa-briefcase"></i></div>
+                    <div class="mobile-link-text">
+                        <span class="title">Portfolio</span>
+                        <span class="sub">Selected Projects & Works</span>
+                    </div>
+                </a>
+                <a href="#contact" class="mobile-nav-link">
+                    <div class="mobile-icon-box"><i class="fas fa-paper-plane"></i></div>
+                    <div class="mobile-link-text">
+                        <span class="title">Contact</span>
+                        <span class="sub">Let's connect & collaborate</span>
+                    </div>
+                </a>
+            </div>
+            <div class="mobile-drawer-footer">
+                <a href="#contact" class="mobile-cta-btn">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+                <div class="mobile-socials">
+                    <a href="https://github.com/GihanDhanushka" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gihan-dhanushka-2513a433a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:gihandhanushka2003@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
         </div>
+        <div class="mobile-backdrop" id="mobile-backdrop"></div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Background Video -->
     <section class="hero" id="hero">
+        <!-- Ambient Video Background -->
+        <div class="hero-video-wrapper">
+            <video class="hero-bg-video" autoplay loop muted playsinline preload="auto">
+                <source src="give_increese_opacity__gwr_video_mvp.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+            <div class="hero-ambient-glow"></div>
+        </div>
+
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-pulse"></span>
+                        <span>Available for Opportunities & Projects</span>
+                    </div>
                     <h1 class="hero-title">
                         Hello, I'm <span class="gradient-text">Gihan Dhanushka</span>
                     </h1>
@@ -51,25 +159,67 @@
                         specializing in software development, system analysis, and database management.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        <a href="#portfolio" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            <span>Get In Touch</span>
+                        </a>
                     </div>
                     <div class="hero-social">
-                        <a href="https://github.com/GihanDhanushka" target="_blank" class="social-icon">
+                        <a href="https://github.com/GihanDhanushka" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile" title="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/gihan-dhanushka-2513a433a/" target="_blank" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/gihan-dhanushka-2513a433a/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="mailto:gihandhanushka2003@gmail.com" class="social-icon">
+                        <a href="mailto:gihandhanushka2003@gmail.com" class="social-icon" aria-label="Send Email" title="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="image/Profile picture.jpg" alt="Gihan Dhanushka" class="profile-img">
-                        <div class="image-background"></div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-glow"></div>
+                    <div class="hero-media-card">
+                        <!-- Window Controls Header -->
+                        <div class="media-card-header">
+                            <div class="window-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <div class="window-title">
+                                <i class="fas fa-play-circle"></i>
+                                <span>showcase_video.mp4</span>
+                            </div>
+
+                        </div>
+
+                        <!-- Video Showcase Container -->
+                        <div class="video-player-container">
+                            <video class="hero-featured-video" autoplay loop muted playsinline preload="auto">
+                                <source src="give_increese_opacity__gwr_video_mvp.mp4" type="video/mp4">
+                            </video>
+                            <div class="video-glass-overlay"></div>
+                        </div>
+
+                        <!-- Card Info Footer -->
+                        <div class="media-card-footer">
+                            <div class="media-author">
+                                <div class="author-avatar">GD</div>
+                                <div class="author-info">
+                                    <span class="author-name">Gihan Dhanushka</span>
+                                    <span class="author-role">Software Developer & Analyst</span>
+                                </div>
+                            </div>
+                            <div class="media-chips">
+                                <span class="m-chip"><i class="fas fa-graduation-cap"></i> SUSL</span>
+                                <span class="m-chip"><i class="fas fa-code"></i> IS Student</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -457,15 +607,15 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Gihan Dhanushka. All rights reserved.</p>
+                <p>&copy; 2026 Gihan Dhanushka. All rights reserved.</p>
                 <div class="footer-social">
-                    <a href="https://github.com/GihanDhanushka" target="_blank">
+                    <a href="https://github.com/GihanDhanushka" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" title="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/gihan-dhanushka-2513a433a/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/gihan-dhanushka-2513a433a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="mailto:gihandhanushka2003@gmail.com">
+                    <a href="mailto:gihandhanushka2003@gmail.com" aria-label="Send Email" title="Email">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
